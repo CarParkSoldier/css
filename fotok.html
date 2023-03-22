@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, inital-scale=1.0">
+  <title>ablak ful</title>
+  <link rel="stylesheet" href="sytle.css">
+  <script src="https://kit.fontawesome.com/9adbfe6438.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="container">
+	 	
+	<h1><img src="logo2.jpg" alt="error" width=auto; height="150"; /></h1>
+		<div class="row glass">
+
+<a href="bemutatkozas.html"><div class="service">
+			<i class="fa-sharp fa-solid fa-user"></i>
+			<h2>Bemutatkozás</h2>
+			<p>Szoveg resz</P>
+			</div></a>
+
+<a href="Szolgaltatasaink.html"><div class="service">
+			<i class="fa-solid fa-van-shuttle"></i>
+			<h2>Szolgáltatásaink</h2>
+			<p>Szoveg resz</P>
+			</div></a>
+
+
+<a href="fotok.html"><div class="service4">
+			<i class="fa-sharp fa-solid fa-camera"></i>
+			<h2>Fényképek</h2>
+			<p>Szoveg resz</P>
+			</div></a>
+
+<a href="#" onClick="alert('Tel:0123456789//nEmail:Yo@ci.hu //n Facebook:')"><div class="service5">
+			<i class="fa-solid fa-envelope"></i>
+			<h2>Elérhetőség</h2>
+			<p>Szoveg resz</P>
+			</div></a>
+</div>
+<div class="container glass2">
+<div class="galery">		
+
+<a href="#"><div class="mySlides fade">
+    <div class="numbertext">1 / 6</div>
+    <img src="kep_7.jpg" style="width: 500px" "height: 10" >
+    
+  </div></a>
+
+<a href="#"><div class="mySlides fade">
+    <div class="numbertext">2 / 6</div>
+    <img src="kep_2.jpg" style="width: 500px" "height: 10" >
+    
+  </div></a>	
+
+<a href="#"><div class="mySlides fade">
+    <div class="numbertext">3 / 6</div>
+    <img src="kep_3.jpg" style="width: 500px" "height: 10" >
+    
+  </div></a>	
+
+<a href="#"><div class="mySlides fade">
+    <div class="numbertext">4 / 6</div>
+    <img src="kep_4.jpg" style="width: 500px" "height: 10" >
+   
+  </div></a>	
+
+<a href="#"><div class="mySlides fade">
+    <div class="numbertext">5 / 6</div>
+    <img src="kep_5.jpg" style="width: 500px" "height: 10" >
+   
+  </div></a>		
+
+<a href="#"><div class="mySlides fade">
+    <div class="numbertext">6 / 6</div>
+    <img src="kep_6.jpg" style="width: 500px" "height: 10" >
+    
+  </div></a>		
+
+	
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+ 
+</div>
+</div>
+
+	</div>
+</div>
+ <div id="fullpage" onclick="this.style.display='none';"></div>
+
+</div>
+
+<script>
+
+function getPics() {}
+const imgs = document.querySelectorAll('.galery img');
+const fullPage = document.querySelector('#fullpage');
+
+imgs.forEach(img => {
+  img.addEventListener('click', function() {
+    fullPage.style.backgroundImage = 'url(' + img.src + ')';
+    fullPage.style.display = 'block';
+  });
+});
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+</body>
+</html>
