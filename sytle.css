@@ -1,0 +1,220 @@
+*{
+	
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+html {
+background-image: url(hatter.jpg);
+background-size: cover;
+background-attachment: fixed;
+}
+a {
+	color: black;
+	text-decoration: none;
+	text-transform: none;
+}
+.fejlec{
+	box-shadow: 0 0 20px 9px #FFFFFF;
+}
+h1{
+
+	text-align: center;
+}
+
+h2{
+	font-weight: auto;
+	margin-bottom: 8px;
+}
+.img {
+	width: auto;
+	height: auto;
+	 
+}
+
+.container{
+	width: 100%;
+	height: 100vh;
+	padding: 0 8%;
+}
+
+.container h1{
+	margin-left: auto;
+  	margin-right: auto;
+	margin-bottom: 60px;
+	font-weight: 600;
+	position: relative;
+}
+
+
+.row{
+	background-color: #FFFF00;
+	border-radius: 15px;
+	box-shadow: 0 0 20px 9px #000000;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+	grid-gap: 30px;
+	margin-bottom: 25px;
+}
+
+.service{
+	
+	text-align: center;
+	padding: 25px 10px;
+	border-radius: 5px;
+	font-size: 14px;
+	cursor: pointer;
+	background: transparent;
+	transition: transform 0.5s, background 0.5s;
+	color: #FFFF00;
+}
+
+.service i{
+	font-size: 40px;
+	margin-bottom: 10px;
+}
+.service h2{
+	font-weight: auto;
+	margin-bottom: 8px;
+	color: #FFFF00;
+}
+.service:hover{
+	border-radius: 25px;
+	border-style: solid;
+	color: #000000;
+	transform: scale(1.05);
+	 box-shadow: 0 0 20px 9px #FFFF00;
+}
+
+
+
+
+
+.mainbox{
+	background-color: #FFFF00;
+	box-shadow: 0 0 20px 9px #000000;
+	border-radius: 15px;
+	padding: 25px 10px;
+	margin-top: 8px;
+
+}
+
+.buttonbox{
+	text-align: center;
+	background-color: #FFFF00;
+	box-shadow: 0 0 20px 9px #000000;
+	width: auto;
+	height: 100px;
+}
+
+.glass{
+	background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	width: auto;	
+	border:1px solid rgba(255, 255, 255, 0.18);
+	box-shadow: 0 0 20px 9px #000000;
+}
+.glass2{
+	background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	width: auto;
+	height: auto;
+	border:1px solid rgba(255, 255, 255, 0.18);
+	box-shadow: 0 0 20px 9px #000000;
+	border-radius: 15px;
+}
+.galery{
+	max-width: auto;
+	position: relative;
+	margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+.fade {
+  text-align: center;
+  background-color: #000000;
+  
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+#fullpage {
+  display: none;
+  position: absolute;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-size: contain;
+  background-repeat: no-repeat no-repeat;
+  background-position: center center;
+  background-color: black;
+}
