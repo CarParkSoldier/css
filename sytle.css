@@ -56,7 +56,7 @@ h2{
 	border-radius: 15px;
 	box-shadow: 0 0 20px 9px #000000;
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(165px, 1fr));
 	grid-gap: 30px;
 	margin-bottom: 25px;
 	
