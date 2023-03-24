@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta http-equiv="Content-Type" content="text/html, charset=iso-8859-2" name="viewport" content="width=device-width, inital-scale=1.0">
+  <title>Mobil Szélvédő Technika</title>
+  <link rel="stylesheet" href="sytle.css">
+  <script src="https://kit.fontawesome.com/9adbfe6438.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+	<div class="container">
+	 	
+	<h1><img src="logo2.jpg" alt="error" style="max-width:800px; width:100%" ></h1>
+		<div class="row glass">
+
+<a href="bemutatkozas.html"><div class="service">
+			<i class="fa-sharp fa-solid fa-user"></i>
+			<h2>Bemutatkozás</h2>			
+			</div></a>
+
+<a href="Szolgaltatasaink.html"><div class="service">
+			<i class="fa-solid fa-van-shuttle"></i>
+			<h2>Szolgáltatásaink</h2>			
+			</div></a>
+
+
+<a href="fotok.html"><div class="service">
+			<i class="fa-sharp fa-solid fa-camera"></i>
+			<h2>Fényképek</h2>			
+			</div></a>
+
+<a href="kapcsolatok.html"><div class="service">
+			<i class="fa-solid fa-envelope"></i>
+			<h2>Elérhetőség</h2>			
+			</div></a>
+
+	</div>
+
+<div class="slideshow-container">
+	<div class="mySlides fade">
+		<img src="reklam1.jpg" style="width:100%">
+		</div>
+	<div class="mySlides fade">
+		<img src="reklam2.jpg" style="width:100%">
+		</div>
+	<div class="mySlides fade">
+		<img src="reklam3.jpg" style="width:100%">
+		</div>
+	</div>
+
+<div>
+  <span class="dott"></span> 
+  <span class="dott"></span> 
+  <span class="dott"></span> 
+</div>
+
+<div class="mainbox"></div>
+
+<div class="buttonbox">
+	<p> Design & Developed by Kulcsar Balazs E-mail Kulcsar_Balazs@hotmail.com </p>
+	</div>
+
+</div>
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dott");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); 
+}
+</script>
+</body>
+</html>
