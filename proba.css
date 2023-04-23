@@ -1,0 +1,47 @@
+*
+
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+	display: flex;
+	justify-content: center;
+	align-time: center;
+	min-height: 100vh;
+	background: #111;
+}
+
+.container{
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container .ring{
+	position: relative;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	border: 4px solid #fff;
+	margin: -30px;
+}
+
+.container .ring:nth-child(3) {
+	position: absolute;
+	top: -66.66px;
+}
+
+.container p{
+	position: absoulute;
+	color: #fff;
+	font-size: 1.5em;
+	font-family: consolas;
+	bottom: -80px;
+	letter-spacing: 0.15em;
+}
+		

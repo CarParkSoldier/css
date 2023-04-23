@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta name="viewport" content="width=device-width, inital-scale=1.0" charset="UTF-8">
+ <title>Testing the CSS</title>
+ <link rel="stylesheet" href="open.css">
+</head>
+
+<body>
+ <header>
+	<div class="navbar">
+		<div class="logo"><a href="#">MyTech</a></div>
+		<ul class="links">
+
+			<li><a href="load.html">home<a/></li>
+			<li><a href="load.html">about<a/></li>
+			<li><a href="load.html">services<a/></li>
+			<li><a href="load.html">contact<a/></li>
+
+		</ul>
+		<a href="#" class="action_btn">Get STarTed</a>
+		<div class="toggle_btn">
+		 <i class="fa-regular fa-bars">|||</i>
+		</div>
+	</div>
+	<div class="dropdown_menu">
+		
+			<li><a href="load.html">home<a/></li>
+			<li><a href="load.html">about<a/></li>
+			<li><a href="load.html">services<a/></li>
+			<li><a href="load.html">contact<a/></li>
+			<li><a href="#" class="action_btn">Get STarTed</a></li>
+
+	</div>
+ </header>
+
+<main>
+	<section id="hero">
+	 <h1>Welcome</h1>
+	<p>
+	 This site<br />
+	 is on your site!
+	</p>
+	</selction>
+</main>
+
+<script>
+ const toggleBtn = document.querySelector('.toggle_btn')
+ const toggleBtnIcon = document.querySelector('.toggle_btn i')
+ const dropDownMenu = document.querySelector('.dropdown_menu')
+
+ toggleBtn.onclick = function () {
+	dropDownMenu.classList.toggle('open')
+	const isOpen = dropDownMenu.classList.contains('open')
+
+	toggleBtnIcon.classList = isOpen
+	 ? 'fa-solid fa-xmark'
+	 : 'fa-solid fa-bars'
+}
+
+
+</script>
+</body>
+</html>
