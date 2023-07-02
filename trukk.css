@@ -1,0 +1,161 @@
+*,
+*::before,*::after {
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+
+body {
+} 
+
+header {
+ position: absolute;
+ z-index: 9999;
+ padding: 0.9rem 0;
+ top: 0;
+ left: 0; 
+ color: white;
+ width: 100%;
+ border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+header nav {
+ background-color: red;
+ max- width: 1400px;
+ margin: 0 auto;
+ padding: 0 2rem;
+ display: flex;
+ justify0content: space-between;
+ aligh-items: center;
+
+}
+
+main {
+ position: relative;
+ background-color: #353;
+ height: 100vh;
+ width: 100vw;
+ overflow: hidden;
+}
+
+.parallax {
+ pointer-events: none;
+ transition: 0.4s;
+ cubic-bezier(.2,.49,.32,.99);
+}
+
+.b {
+ position: absolute;
+ width: 1500px;
+ top: calc(50% - 390px);
+ left: calc(50% + 10px);
+ z-index: 1;
+ transform: translate(-50%, -50%);
+}
+
+.w {
+position: absolute;
+ width: 1900px;
+ top: calc(50% - 100px);
+ left: calc(50% + 300px);
+ z-index: 2;
+ transform: translate(-50%, -50%);
+}
+
+
+
+.y {
+position: absolute;
+ width: 300px;
+ top: calc(50% - 75px);
+ left: calc(50% + 475px);
+ z-index: 3;
+ transform: translate(-50%, -50%);
+}
+
+.g {
+position: absolute;
+ width: 470px;
+ top: calc(50% + 350px);
+ left: calc(50% + 110px);
+ z-index: 4;
+ transform: translate(-50%, -50%);
+}
+
+.r {
+position: absolute;
+ width: 250px;
+ top: calc(50% - 0px);
+ left: calc(50% + 691px);
+ z-index: 5;
+ transform: translate(-50%, -50%);
+}
+
+.text {
+ position: absolute;
+ z-index: 11;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ text-align: center;
+ text-transform: uppercase;
+}
+ 
+.text h2 {
+ font-weight: 100;
+ font-size: 6.5rem;
+}
+
+.text h1 {
+ font-weight: 800;
+ font-size: 8rem;
+ line-height: 0.88;
+}
+
+.cg {
+position: absolute;
+ width: 325px;
+ top: calc(50% - 120px);
+ left: calc(50% - 320px);
+ z-index: 6;
+ transform: translate(-50%, -50%);
+}
+
+.cw {
+position: absolute;
+ width: 220px;
+ top: calc(50% - 75px);
+ left: calc(50% + 560px);
+ z-index: 7;
+ transform: translate(-50%, -50%);
+}
+
+.cy {
+position: absolute;
+ width: 490px;
+ top: calc(50% + 113px);
+ left: calc(50% - 470px);
+ z-index: 8;
+ transform: translate(-50%, -50%);
+}
+
+.cb {
+position: absolute;
+ width: 370px;
+ top: calc(50% + 150px);
+ left: calc(50% - 520px);
+ z-index: 9;
+ transform: translate(-50%, -50%);
+}
+
+.cr {
+position: absolute;
+ width: 310px;
+ top: calc(50% + 69px);
+ left: calc(50% - 170px);
+ z-index: 10;
+ transform: translate(-50%, -50%);
+}
+
+
+

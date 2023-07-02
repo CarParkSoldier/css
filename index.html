@@ -1,64 +1,37 @@
 <!DOCTYPE html>
 <html>
-<head>
- <meta name="viewport" content="width=device-width, inital-scale=1.0" charset="UTF-8">
- <title>Testing the CSS</title>
- <link rel="stylesheet" href="open.css">
+<head><meta name=\"viewport\" content=\"width=device-width, height=device-height, initial-scale=1\">
+<title>3D hatter</title>
+<link rel="stylesheet" href="trukk.css">
 </head>
-
 <body>
  <header>
-	<div class="navbar">
-		<div class="logo"><a href="#">MyTech</a></div>
-		<ul class="links">
-
-			<li><a href="loading.html">home<a/></li>
-			<li><a href="load.html">about<a/></li>
-			<li><a href="load.html">services<a/></li>
-			<li><a href="load.html">contact<a/></li>
-
-		</ul>
-		<a href="#" class="action_btn">Get STarTed</a>
-		<div class="toggle_btn">
-		 <i class="fa-regular fa-bars">|||</i>
-		</div>
-	</div>
-	<div class="dropdown_menu">
-		
-			<li><a href="loading.html">home<a/></li>
-			<li><a href="load.html">about<a/></li>
-			<li><a href="load.html">services<a/></li>
-			<li><a href="load.html">contact<a/></li>
-			<li><a href="#" class="action_btn">Get STarTed</a></li>
-
-	</div>
- </header>
+	<nav>JUST A TEST</nav>
+</header>
 
 <main>
-	<section id="hero">
-	 <h1>Welcome</h1>
-	<p>
-	 This site<br />
-	 is on your site!
-	</p>
-	</selction>
+ <div class="vignette"></div>
+ <img src="black.png" data-speedx="0.4" data-speedy="0.4" class="parallax b">
+ <img src="white.png" data-speedx="0.1" data-speedy="0.1" class="parallax w">
+ <img src="yellow.png" data-speedx="0.2" data-speedy="0.2" class="parallax y">
+ <img src="green.png" data-speedx="0.025" data-speedy="0.025" class="parallax g">
+ <img src="red.png" data-speedx="0.1" data-speedy="0.1" class="parallax r"> 
+
+<div class="text parallax">
+ <h2> Kulcsar </h2>
+ <h1> Balazs </h1>
+</div>
+
+<img src="c_black.png" data-speedx="0.3" data-speedy="0.3" class="parallax cb">
+ <img src="c_white.png" data-speedx="0.3" data-speedy="0.3" class="parallax cw">
+<img src="c_yellow.png" data-speedx="0.2" data-speedy="0.2" class="parallax cy">  
+ <img src="c_green.png" data-speedx="0.1" data-speedy="0.4" class="parallax cg">
+<img src="c_red.png" data-speedx="0.02" data-speedy="0.4" class="parallax cr"> 
 </main>
 
-<script>
- const toggleBtn = document.querySelector('.toggle_btn')
- const toggleBtnIcon = document.querySelector('.toggle_btn i')
- const dropDownMenu = document.querySelector('.dropdown_menu')
-
- toggleBtn.onclick = function () {
-	dropDownMenu.classList.toggle('open')
-	const isOpen = dropDownMenu.classList.contains('open')
-
-	toggleBtnIcon.classList = isOpen
-	 ? 'fa-solid fa-xmark'
-	 : 'fa-solid fa-bars'
-}
+<script src="app.js"></script>
 
 
-</script>
 </body>
 </html>
+
