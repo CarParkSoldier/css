@@ -5,8 +5,10 @@
  box-sizing: border-box;
 }
 
-body {
-} 
+
+
+
+
 
 header {
  position: absolute;
@@ -32,7 +34,7 @@ header nav {
 
 main {
  position: relative;
- background-color: #353;
+ 
  height: 100vh;
  width: 100vw;
  overflow: hidden;
@@ -44,52 +46,18 @@ main {
  cubic-bezier(.2,.49,.32,.99);
 }
 
-.b {
- position: absolute;
- width: 1500px;
- top: calc(50% - 390px);
- left: calc(50% + 10px);
- z-index: 1;
- transform: translate(-50%, -50%);
-}
-
-.w {
-position: absolute;
- width: 1900px;
- top: calc(50% - 100px);
- left: calc(50% + 300px);
- z-index: 2;
- transform: translate(-50%, -50%);
-}
 
 
 
 .y {
 position: absolute;
  width: 300px;
- top: calc(50% - 75px);
+ top: calc(50% + 200px);
  left: calc(50% + 475px);
  z-index: 3;
  transform: translate(-50%, -50%);
 }
 
-.g {
-position: absolute;
- width: 470px;
- top: calc(50% + 350px);
- left: calc(50% + 110px);
- z-index: 4;
- transform: translate(-50%, -50%);
-}
-
-.r {
-position: absolute;
- width: 250px;
- top: calc(50% - 0px);
- left: calc(50% + 691px);
- z-index: 5;
- transform: translate(-50%, -50%);
-}
 
 .text {
  position: absolute;
@@ -112,50 +80,111 @@ position: absolute;
  line-height: 0.88;
 }
 
-.cg {
-position: absolute;
- width: 325px;
- top: calc(50% - 120px);
- left: calc(50% - 320px);
- z-index: 6;
- transform: translate(-50%, -50%);
-}
 
-.cw {
-position: absolute;
- width: 220px;
- top: calc(50% - 75px);
- left: calc(50% + 560px);
- z-index: 7;
- transform: translate(-50%, -50%);
-}
+
+
 
 .cy {
 position: absolute;
- width: 490px;
- top: calc(50% + 113px);
- left: calc(50% - 470px);
- z-index: 8;
- transform: translate(-50%, -50%);
+ height: 150%;
+ top: 20%;
+ left: -17%;
+ z-index: 2;
+
+}
+
+
+
+
+
+
+
+.g {
+position: absolute;
+ width: 40%;
+ top: 70%;
+ left: 50%;
+ z-index: 3;
 }
 
 .cb {
-position: absolute;
- width: 370px;
- top: calc(50% + 150px);
- left: calc(50% - 520px);
- z-index: 9;
- transform: translate(-50%, -50%);
+ position: absolute;
+ widht: 100%;
+ height: 100%;
+ top: 20%;
+ left: ;
+ z-index: 4;
 }
+
 
 .cr {
 position: absolute;
- width: 310px;
- top: calc(50% + 69px);
- left: calc(50% - 170px);
- z-index: 10;
- transform: translate(-50%, -50%);
+ top: 20%;
+ width: 75%;
+ height: 75%;
+ z-index: 5;
 }
 
 
+.cw {
+position: absolute;
+ width: 120%;
+ top: 1%;
+ left: -45%;
+ z-index: 6;
+ opacity:0.5;
+}
+
+
+.cg {
+position: absolute;
+ width: 100%;
+ top: -30%;
+ left: 20%;
+ z-index: 1;
+}
+
+
+.w {
+
+ position: absolute;
+ width: 100%;
+ top: 40%;
+ left: 25%;
+ z-index: 8;
+ opacity: 0.7;
+}
+
+.b {
+ position: absolute;
+ width: 50%;
+ left:-15%;
+ z-index: 9;
+}
+
+.r {
+position: absolute;
+ height: 200%;
+ left: 70%;
+ z-index: 10;
+}
+
+.bg {
+ position: absolute;
+ height:110%; 
+ width:150%;
+ left: -30%;
+ top: -2%;
+ z-index: 12;
+}
+
+.grass {
+ position: absolute;
+ height: 100%;
+ top: 30%;
+ left:-5%;
+ width: 110%;
+ position: absolute;
+ z-index: 11;
+} 
 
